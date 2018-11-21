@@ -1,0 +1,137 @@
+
+.content_box{
+	width: 1200px;
+    margin: 0 auto;
+    clear: both;
+
+}
+
+
+#wrap{
+		width:500px;
+		height:460px;
+		background-color:#fff;
+		border:1px solid #DFDFDF;
+		position: relative;
+		margin-top: 50px;
+		margin-bottom:50px;
+
+
+
+		float:left;
+	}
+	.tab_menu{
+		background: #F0F0F0;
+		 font: 400 17px/25px "Microsoft YaHei";
+   		 color: #fff;
+	}
+	.tab_menu{
+		overflow:hidden;
+	}
+	.tab_menu ul li{
+		float:left;
+		width:49.7%;
+		height:50%;
+		line-height: 50px;
+		text-align:center;
+		
+	}
+	.box{
+		width:400px;
+		height:70px;
+		margin-left: 80px;
+	}
+	.box input{
+		width:300px;
+		height:35px;
+		
+	}
+	.int{
+		margin-top:60px;
+		margin-left:80px;
+		
+	}
+	.sub{
+		margin-left:80px ;
+		margin-top:30px;
+
+	}
+	#bnt{
+		width:300px;
+		height:40px;
+		background: #8AB700;
+		color:#fff;
+		/*margin-left: 20px;*/
+	}
+	.land{
+		position:absolute;
+		margin-right: 20px;
+		font: 400 17px/25px "Microsoft YaHei";
+   		 /*color: #fff;*/
+	
+
+	}
+	.register{
+		position: absolute;
+		display: none;
+				font: 400 17px/25px "Microsoft YaHei";
+
+	}
+	.on{
+		background: #8AB700;
+	}
+	.code{
+		margin-left:80px;
+		margin-top: 40px;
+	}
+	.code input{
+		width:60px;
+		height:25px;
+
+
+	}
+	#checkCode{
+		
+		font-family:Arial,宋体;
+		font-style:italic;
+		color:green;
+		border:0;
+		padding:2px 3px;
+		letter-spacing:3px;
+		font-weight:bolder;
+		position: absolute;
+		right: 190px;
+
+	}
+
+	.img_box {
+		float:right;
+		width:500px;
+		height:460px;
+		margin-top: 50px;
+		margin-bottom:50px;
+		margin-right: 50px;
+	}
+	.img_box img{
+		width:100%;
+		height:100%;
+	}
+
+	/*提示*/
+	.yes{
+		background: green;
+		color:white;
+		border:2px solid white;
+	}
+	/*提示*/
+	.no{
+		background:#FEF0E3;
+		border:2px solid red;
+	}
+	/*input边框变色*/
+	.eorr{   
+		border:2px solid red;
+	}
+
+
+	

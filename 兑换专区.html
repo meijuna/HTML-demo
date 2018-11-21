@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>兑换专区</title>
+<style type="text/css">
+.box{ width:1920px; margin:0 auto; background-color:#F2F2F2; }
+.top{ width:1920px; height:554px; margin:0 auto;}
+.one{ width:1920px; }
+.two{ width:1300px; height:1980px; float:left; padding-left:450px; background-color:#F2F2F2;}
+.two1{ width:300px; height:400px; margin:0 auto; float:left; text-align:center; background-color:#FFF;}
+.two2{ width:340px; height:480px; margin:0 auto; float:left; text-align:center; background-color:#FFF;}
+
+.two3{ 
+  padding-top: 10px;
+  width:360px; 
+  height:480px;
+  margin:0 auto;
+  float:left;
+  text-align:center;
+  background-color:#F2F2F2;
+
+  transition: All 0.4s ease-in-out;
+  -webkit-transition: All 1s ease-in-out;
+  -moz-transition: All 1s ease-in-out;
+  -o-transition: All 1s ease-in-out;
+
+ }
+
+p{
+  margin-top:28px;
+}
+.three{ width:1680px; height:1300px; float:left; padding-left:240px; background-color:#F2F2F2;}
+.three1{ width:230px; height:330px; margin:0 auto; float:left; text-align:center; background-color:#FFF;}
+.three2{ width:280px; height:420px; margin:0 auto; float:left; text-align:center; background-color:#FFF;}
+
+.three3{ 
+
+    width:300px; 
+    height:420px;
+    margin:7px auto;
+    float:left; 
+    text-align:center;
+    background-color:#F2F2F2;
+
+
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 1s ease-in-out;
+    -moz-transition: All 1s ease-in-out;
+    -o-transition: All 1s ease-in-out;
+}
+
+.four{ width:1900px; height:875px; float:left; padding-left:20px; background-color:#F2F2F2;}
+.four1{width:1000px; height:860px; margin:0 auto; background-color:#FFF; font-size:14px; padding-left:50px; padding-right:50px;}
+.p1{margin-top: 15px;text-indent: 2em; line-height:25px;}
+.p2{color: #583D1F;font-weight: bold;padding-left: 18px;
+	background-repeat: no-repeat;
+	background-position: 2px; margin-top:15px;}
+
+.p3{color: #583D1F;font-weight: bold;padding-left: 18px;
+	clear: both;background-repeat: no-repeat;background-position: 2px 12px;padding-top: 10px;}
+
+/*.p4{ clear:both; border-bottom:solid 1px #583D1F; padding-top:-2px;}*/
+.p5{ font-size:22px; color:#F30;}
+.p6{padding-top:-50px;}
+.li{float: left;width: 90px; list-style-type: none;	}
+
+.two3:hover p{
+       transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+}
+
+.three3:hover p{
+       transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+}
+
+.float_index{
+    position: fixed;
+    right: 5%;
+    top: 29%;
+    border-radius: 10px;
+    width: 100px;
+    overflow: hidden;
+    font-weight: bold;
+    visibility: hidden;
+}
+a.first{
+    background-color: #8be1ef;
+    color: white;
+    border-bottom: 1px dashed white;
+}
+.flat_menu{
+  position: fixed;
+    right: 5%;
+    top: 29%;
+    border-radius: 10px;
+    width: 100px;
+    overflow: hidden;
+    font-weight: bold;
+    z-index: 9999;
+}
+.flat_menu a{
+    border-bottom: 1px dashed #8be1ef;
+    display: block;
+    text-align: center;
+    background-color: white;
+    padding: 5px 10px;
+    width: 80px;
+    color: #ff8c8c;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration: none;
+
+}
+a.tit{
+   background-color: #8be1ef;
+    color: white;
+    border-bottom: 1px dashed white;
+}
+</style>
+<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+     // 左菜单 箭头
+    $("#to_up").click(function() {
+      $("html,body").animate({scrollTop:0}, 500);
+      $(".flat_menu").hide();
+    }); 
+
+
+    $(window).bind("scroll", function () {  
+        var sTop = $(window).scrollTop();  
+        var sTop = parseInt(sTop);  
+        if (sTop >= 200) {  
+          $(".flat_menu").show();  
+              
+        }else {  
+          $(".flat_menu").hide();  
+        }  
+        
+     }); 
+
+
+  })
+  
+</script>
+</head>
+
+<body>
+
+<div class="box">
+<div class="top">
+  <img src="兑换专区/1.jpg" width="1920" height="277" />
+  <img src="兑换专区/3.jpg" width="1920" height="277" />
+</div>
+<div class="float_index">
+    <a href="#" class="first">
+        本来生活网
+        <br>
+        兑换专区
+    </a>
+</div>
+<div class="two" id="index1">
+      <!-- 右浮动菜单 -->
+      <div class="flat_menu">
+          <a href="###" class="tit">
+            本来生活网 <br>
+            兑换专区
+          </a>
+          <a href="#index1"><span class="index1">兑换专区</span></a>
+          <a href="#index2" ><span class="index2">热销单品</span></a>
+          <a href="#index3" class="">
+            兑换方法<br>
+            疑问解答
+          </a>
+          <a href="###" class="tit" id="to_up">返回顶部</a>
+      </div>
+      <div class="two3">
+      <div class="two2">
+ 
+      <div class="two1" style="padding-left:20px;">
+      
+         <p>
+        <a href="#"><img src="兑换专区/阿根廷船冻红虾139.jpg" width="260" height="260" /></a> </p>
+            <p>阿根廷船冻红虾</p>
+            <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥139</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+         
+        </div>
+        </div>
+  </div>
+  
+          <div class="two3">
+          <div class="two2">
+          <div class="two1" style="padding-left:20px;">
+          <p>
+           <a href="#"><img src="兑换专区/阿根廷红虾39.9.jpg" width="260" height="260" /></a> </p>
+            <p>阿根廷红虾</p>
+            
+            <p style="font-size:30px; font-weight:bolder;">￥39.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>
+        </div>
+        </div>
+  <div class="two3">
+        <div class="two2">
+        <div class="two1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/本来生活冷冻翡翠生虾158.jpg" width="260" height="260" /></a> </p>
+            <p>本来生活冷冻翡翠生虾</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥158</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+   <p class="p4" style="float:left; padding-top:50px;">  
+       
+  </p>
+  
+<div class="two3">
+    <div class="two2">
+ 
+      <div class="two1" style="padding-left:20px;">
+      
+         <p>
+        <a href="#"><img src="兑换专区/进口菠萝1粒19.9.jpg" width="260" height="260" /></a> </p>
+            <p>进口菠萝1粒</p>
+            <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥19.9</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+         
+      </div>
+    </div>
+  </div>
+          <div class="two3">
+          <div class="two2">
+          <div class="two1" style="padding-left:20px;">
+          <p>
+           <a href="#"><img src="兑换专区/甘肃黄蕉苹果6粒38.jpg" width="260" height="260" /></a> </p>
+            <p>甘肃黄蕉苹果6粒</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥38</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>
+        </div>
+        </div>
+        <div class="two3">
+        <div class="two2">
+        <div class="two1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/高山富士45.8.jpg" width="260" height="260" /></a> </p>
+            <p>高山富士</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥45.8</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+        </div>
+        <p class="p4" style="float:left;">      
+  </p>
+<div class="two3">
+    <div class="two2">
+ 
+      <div class="two1" style="padding-left:20px;">
+      
+         <p>
+        <a href="#"><img src="兑换专区/辣子鸡160g 7.9.jpg" width="260" height="260" /></a> </p>
+            <p>辣子鸡160g</p>
+            <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥7.9</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+         
+      </div>
+    </div>
+  </div>
+          <div class="two3">
+          <div class="two2">
+          <div class="two1" style="padding-left:20px;">
+          <p>
+           <a href="#"><img src="兑换专区/金城奶皇包360g 8.4.jpg" width="260" height="260" /></a> </p>
+            <p>金城奶皇包360g</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥8.4</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an2.JPG" width="169" height="41" /></a></p>
+        </div>
+        </div>
+        </div>
+        <div class="two3">
+        <div class="two2">
+        <div class="two1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/乐肴居菌菇米汉堡5.8.jpg" width="260" height="260" /></a> </p>
+            <p>乐肴居菌菇米汉堡</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥5.8</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+        </div>
+         <p class="p4" style="float:left;">      
+  </p>
+<div class="two3">
+    <div class="two2">
+ 
+      <div class="two1" style="padding-left:20px;">
+      
+         <p>
+        <a href="#"><img src="兑换专区/越南进口红心火龙果29.9.jpg" width="260" height="260" /></a> </p>
+            <p>越南进口红心火龙果</p>
+            <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥29.9</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+         
+      </div>
+    </div>
+  </div>
+          <div class="two3">
+          <div class="two2">
+          <div class="two1" style="padding-left:20px;">
+          <p>
+           <a href="#"><img src="兑换专区/西域香妃雪梨68.jpg" width="260" height="260" /></a> </p>
+            <p>西域香妃雪梨</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥68</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>
+        </div>
+        </div>
+        <div class="two3">
+        <div class="two2">
+        <div class="two1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/三都港 无公害黄花鱼89.jpg" width="260" height="260" /></a> </p>
+            <p>三都港 无公害黄花鱼</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥89</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+        </div>
+        </div>
+        <div class="one">
+        </div>
+        <a href="#"><img src="兑换专区/2.jpg" width="1920" height="151" /></a> </div>
+       
+     <div class="three" id="index2">
+     <div class="three3">
+      <div class="three2">
+ 
+      <div class="three1" style="padding-left:20px;">
+      
+         <p>
+        <a href="#"><img src="兑换专区/三都港蒲烧鳗鱼段39.9.jpg" width="200" height="200" /></a> </p>
+            <p>三都港蒲烧鳗鱼段</p>
+            <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥39.9</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+         
+        </div>
+        </div>
+  </div>
+  
+          <div class="three3">
+          <div class="three2">
+          <div class="three1" style="padding-left:20px;">
+          <p>
+           <a href="#"><img src="兑换专区/台湾精品牛奶蜜枣99.jpg" width="200" height="200" /></a> </p>
+            <p>台湾精品牛奶蜜枣</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥99</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>
+        </div>
+        </div>
+  <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/龙凤 荠菜猪肉水饺27.9.jpg" width="200" height="200" /></a> </p>
+            <p>龙凤 荠菜猪肉水饺</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥27.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+  <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/菲律宾进口香蕉29.9.jpg" width="200" height="200" /></a> </p>
+            <p>菲律宾进口香蕉</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥29.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+   <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/新疆库尔勒香梨9.9.jpg" width="200" height="200" /></a> </p>
+            <p>新疆库尔勒香梨</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥9.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+         <div class="three3">
+      <div class="three2">
+ 
+      <div class="three1" style="padding-left:20px;">
+      
+         <p>
+        <a href="#"><img src="兑换专区/渔天下真鳕颈肉（宝宝鳕鱼）23.8.jpg" width="200" height="200" /></a> </p>
+            <p>渔天下真鳕颈肉</p>
+            <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥23.8</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+         
+        </div>
+        </div>
+  </div>
+  
+          <div class="three3">
+          <div class="three2">
+          <div class="three1" style="padding-left:20px;">
+          <p>
+           <a href="#"><img src="兑换专区/阿根廷鱿鱼22.9.jpg" width="200" height="200" /></a> </p>
+            <p>阿根廷鱿鱼</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥22.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>
+        </div>
+        </div>
+  <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/澳洲牛仔骨39.9.jpg" width="200" height="200" /></a> </p>
+            <p>澳洲牛仔骨</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥39.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+  <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/大洋世家 北海道野生扇贝98.jpg" width="200" height="200" /></a> </p>
+            <p>大洋世家 北海道野生扇贝</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥98</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+   <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/大洋世家活切梭子蟹58.jpg" width="200" height="200" /></a> </p>
+            <p>大洋世家活切梭子蟹</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥58</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+        </div>
+        <div class="three3">
+      <div class="three2">
+ 
+      <div class="three1" style="padding-left:20px;">
+      
+         <p>
+        <a href="#"><img src="兑换专区/澳洲牛腱子32.8.jpg" width="200" height="200" /></a> </p>
+            <p>澳洲牛腱子</p>
+            <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥32.8</p>
+            <p class="p4"></p>
+            <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+         
+        </div>
+        </div>
+  </div>
+  
+          <div class="three3">
+          <div class="three2">
+          <div class="three1" style="padding-left:20px;">
+          <p>
+           <a href="#"><img src="兑换专区/奥尔良鸡翅29.9.jpg" width="200" height="200" /></a> </p>
+            <p>奥尔良鸡翅</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥29.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>
+        </div>
+        </div>
+  <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/本来生活冷冻生蝴蝶虾158.jpg" width="200" height="200" /></a> </p>
+            <p>本来生活冷冻生蝴蝶虾</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥158</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+  <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/海南西州蜜25号1粒装25.8.jpg" width="200" height="200" /></a> </p>
+            <p>海南西州蜜25号1粒装</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥25.8</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+   <div class="three3">
+        <div class="three2">
+        <div class="three1" style="padding-left:20px;">
+           <p><a href="#"><img src="兑换专区/进口牛油果53.9.jpg" width="200" height="200" /></a> </p>
+            <p>进口牛油果</p>
+             <p class="p4"></p>
+            <p style="font-size:30px; font-weight:bolder;">￥53.9</p>
+            <p class="p4"></p>
+             <p> <a href="#"><img src="兑换专区/an1.JPG" width="169" height="41" /></a></p>
+        </div>  
+        </div>
+  </div>
+  
+  
+</div>
+<div class="four" id="index3"> 
+    <div class="four1"> 
+    <p class="p3"></p>
+    <p class="p5"><img src="兑换专区/兑换须知.JPG" width="27" height="26" />兑换须知</p>
+    <hr style="border : 1px dashed gray;" />
+   
+    <ul>
+    <li><p>订单超出兑换商品的面值部分可选择在收货时支付现金或者POS机刷卡，也可以在线支付</p></li>
+    <li><p>本商品兑换券仅能使用一次，不找零、不挂失、不退换、不能兑换现金</p></li>
+    <li><p>本商品兑换券不含运费，抵扣商品的部分不开具发票</p></li>
+    <li><p>如订单产生退货，兑换券将不能使用</p></li>
+    <li><p>本次活动每位用户你限兑换- -份，经核实如发现恶意注册、恶意领取等</p></li>
+    <li><p>非正常兑换的用户，将取消兑换资格，不给予商品兑换:在法律允许条件下，本项活动最终解释权归本来工坊科技有限公司所有</p></li>
+    <li><p>同批次兑换券限每个账号使用一次，如同要给账号拿到两张兑换券，需要分两次兑换</p></li>
+    </ul>
+    
+    <p class="p3"></p>
+    <p class="p5"><img src="兑换专区/QA.JPG" width="33" height="31" />兑换券使用Q&A </p>
+    <hr style="border : 1px dashed gray;" />
+   
+    <ul>
+      <li style="list-style-type:none;">Q:兑换商品缺货怎么回事儿?</li>
+      <li style="list-style-type:none;">A:为保证食材新鲜度，我们每日备货量有限，缺货属暂时情况。如遇缺货，请第二天再来。</li>
+      </ul>
+      <ul>
+      <li style="list-style-type:none;">Q:-次可以使用多张兑换券吗?</li>
+      <li style="list-style-type:none;">A:一个账号一次只能用一张兑换券。如果您手头上有多站兑换券，可分次进行兑换。</li>
+      </ul>
+      <ul>
+      <li style="list-style-type:none;">Q:兑换商品包邮吗?</li>
+      <li style="list-style-type:none;">A:非常抱歉，兑换商品是不包邮的，如只兑换需支付运费，建议您选购其他商品凑单到免邮门槛再下单。</li>
+      </ul>
+      <ul>
+      <li style="list-style-type:none;">Q:结账时输入密码无效怎么办?</li>
+      <li style="list-style-type:none;">A:每个兑换码使用一次后即失效，如果出现密码无效的情况，可能是您已经使用过一次，或者您添加的商品不是兑换专用商品。</li>
+      </ul>
+      <ul>
+      <li style="list-style-type:none;">Q:同一商品能否兑换多份?</li>
+      <li style="list-style-type:none;">A:同一兑换商品，每个账号仅限兑换一份</li>
+      </ul>
+    
+    <p class="p3"></p>
+    <p class="p5"><img src="兑换专区/特别提醒.JPG" width="28" height="33" />特别提醒</p>
+    <hr style="border : 1px dashed gray;" />
+    <p> &nbsp&nbsp&nbsp&nbsp 我们为了保证食材的优质和新鲜，对于生鲜商品的验收控制比较严格，在兑换期内可能会出现少数缺货情况，请您择日再来选购，我们将在最短的时间内补货，请理解。</p>
+
+    
+</div>
+   </div>
+<img src="兑换专区/4.jpg" width="1920" height="119" />
+</div>
+
+</body>
+</html>

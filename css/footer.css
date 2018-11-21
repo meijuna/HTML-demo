@@ -1,0 +1,134 @@
+/*尾部*/
+.footer{
+    width: 100%;
+    float: left;
+    background-color: #f8f8f6;
+  
+}
+
+.footer .bar{
+    width: 1200px;
+    margin:0 auto;
+      height: 120px;
+} 
+
+.bar li{
+    float: left;
+    margin-right: 58px;
+    padding-top: 40px;
+}
+
+.footer_icon{
+    background: url("../images/图标/footer_icon.gif") no-repeat;
+    float: left;
+    width: 28px;
+    height: 40px;
+    border-right: 1px solid #aeaead;
+    padding: 0 13px;
+    margin-right: 13px;
+}
+
+.footer_icon02{
+    background-position:0px -50px; 
+}
+.footer_icon03{
+    background-position:0px -100px; 
+}
+.footer_icon04{
+    background-position:0px -150px; 
+}
+.footer_icon05{
+    background-position:0px -200px; 
+}
+
+
+.footer_txt{
+    font: 400 14px/22px "Microsoft YaHei";
+    color: #666;
+    float: left;
+}
+.footer_txt span{
+     display: block;
+    font: 400 20px/22px "Microsoft YaHei";
+    color: #90b42f;
+}
+
+
+.footer_list{
+    width: 920px;
+    padding: 20px 0 20px 70px;
+    height: 160px;
+    border-top: 0;
+    margin: 0 auto;
+}
+.footer_list li{
+    float: left;
+    width: 230px;
+    height: 160px;
+}
+
+.footer_list .footer_tit{
+    font: 700 14px/26px "微软雅黑";
+    height: 26px;
+    margin-bottom: 10px;
+    color: #666;
+    padding-left: 35px;
+    background: url("../images/图标/footer_icon.gif") 0 -250px no-repeat;
+}
+
+.footer_list p{
+    line-height: 10px;
+    margin-left: 10px;
+    padding-left: 25px;
+    border-left: 1px dotted #ccc;
+}
+
+
+.footer_list .footer_tit2{
+   font: 700 14px/26px "微软雅黑";
+    height: 26px;
+    margin-bottom: 10px;
+    color: #666;
+    padding-left: 35px;
+    background: url("../images/图标/footer_icon.gif") 0 -280px no-repeat;
+}
+
+.footer_list .footer_tit3{
+   font: 700 14px/26px "微软雅黑";
+    height: 26px;
+    margin-bottom: 10px;
+    color: #666;
+    padding-left: 35px;
+    background: url("../images/图标/footer_icon.gif") 0 -314px no-repeat;
+}
+.footer_list .footer_tit4{
+   font: 700 14px/26px "微软雅黑";
+    height: 26px;
+    margin-bottom: 10px;
+    color: #666;
+    padding-left: 35px;
+    background: url("../images/图标/footer_icon.gif") 0 -348px no-repeat;
+}
+
+/*footer3*/
+.footer_info{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_info .row1{
+    font: 800 14px/30px "Microsoft YaHei";
+    color: #666;
+}
+
+em{
+    padding: 0 10px;
+    border-right: 1px solid #666;
+    line-height: 24px;
+    color: #666;
+    font-style:normal;
+}
+.copy{
+        font-family: arial;
+}

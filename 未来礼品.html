@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>礼品注册</title>
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="script/gift.js"></script>
+
+<style type="text/css">
+.zhengti{
+	    width: 990px;
+    margin: 0px auto;
+	overflow: hidden;
+}
+.header{
+	width:1024px;
+	height:136px;
+
+
+}
+.header1{
+	float:left;
+}
+.header2{
+	padding:10px;
+}
+.header3{
+	float:right;
+	margin-top:-30px;
+}
+.banner{
+	background:url(未来礼品/gift_menu01.gif);
+	width:990px;
+	height:34px;
+	margin:auto;
+	margin-top:-70px;
+}
+.banner ul {
+	margin-left: 200px;
+}
+.banner ul li{
+	list-style-type:none;
+	float:left;
+	color:white;
+	font-size: 16px;
+	line-height: 34px;
+}
+
+.banner1 {
+	overflow: hidden;
+	margin-top:-10px;
+}
+.banner1 h3{
+    float: left;
+    width: 966px;
+    margin: 15px 0px 1px 24px;
+    /*border-bottom: 1px solid #c8c8c8;*/
+    font: 400 22px/35px "黑体";
+    color: #000;
+	
+	
+	
+}
+
+.main{
+	  float: left;
+    width: 990px;
+    height: 350px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.main1{
+	 float: left;
+    width: 290px;
+    height: 308px;
+    background-color: #fff;
+    margin-left: 50px;
+    margin: -309px 0px 0px 24px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 2px 1px 6px rgba(108,108,108,0.4);
+	
+}
+
+.main_info{
+	float: left;
+    width: 240px;
+    padding: 40px 25px 0px 25px;
+}
+
+.wrap{
+	 float: left;
+    width: 240px;
+    padding: 19px 25px 0px 25px;
+}
+.bianma{
+	width:240px;
+	height:45px;
+	float:right;
+}
+.bianma1{
+	width:70px;
+	height:45px;
+	background:white;
+	border: 1px  #F7F7F7 solid;
+	text-align:center;
+	margin-top:30px;
+	margin-left:-50px;
+}
+.bianma2{
+	width:170px;
+	height:45px;
+	background:#EFEFEF;
+	margin-top:-47px;
+	margin-left:20px;
+	
+}
+.mima1{
+	width:70px;
+	height:45px;
+	background:white;
+	border: 1px  #F7F7F7 solid;
+	text-align:center;
+	margin-top:30px;
+	margin-left:-50px;
+	}
+.mima2{
+	width:170px;
+	height:45px;
+	background:#EFEFEF;
+	margin-top:-47px;
+	margin-left:20px;
+}
+.main2{
+	width:990px;
+	margin:auto;
+	margin-bottom: 200px;
+}
+.liulan{
+	margin-top:-70px;
+	margin-left:100px;
+}
+.kx{
+	margin-top:-4px;
+}
+.lj{
+	margin-top:-70px;
+	margin-left:400px;
+}
+.kx1{
+	margin-top:-4px;
+}
+.bp{
+	margin-top:-200px;
+	margin-left:100px;
+}
+.kx2{
+	margin-top:-4px;
+}
+.kx3{
+	margin-top:-4px;
+}
+.footer_content{
+	width:1520px;
+}
+
+
+.tit{
+	float: left;
+    font: 400 14px/40px "黑体";
+    color: #626262;
+    text-align: center;
+    border: 1px solid #f7f7f7;
+    width: 64px;
+    
+    z-index: 10;
+    background-color: #fff;
+}
+.tit1{
+	position: absolute;
+    top: 20px;
+    left: 24px;
+}
+.tit2{
+	position: absolute;
+    top: 104px;
+    left: 24px;
+}
+#ipt1,#ipt2{
+	   float: right;
+    background-color: #efefef;
+    font: 400 14px/42px "黑体";
+    color: #626262;
+    border: 1px solid #fff;
+    height: 42px;
+    width: 160px;
+    padding: 0px 7px 0px 73px;
+	margin-bottom: 40px;
+}
+#ipt3{
+	float: left;
+    background-color: #efefef;
+    font: 400 12px/42px "黑体";
+    color: #626262;
+    border: 1px solid #fff;
+    height: 42px;
+    width: 60px;
+    padding: 0px 7px;
+    margin-right: 10px;
+}
+#checkCode{
+	 float: left;
+    width: 100px;
+    height: 42px;
+    margin-right: 10px;
+        font-family: Arial, 宋体;
+    font-style: italic;
+    color: green;
+    letter-spacing: 3px;
+    font-weight: bolder;
+  
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px 3px;
+}
+.in a{
+    font: 400 14px/42px "黑体";
+    color: #626262;
+}
+
+#btn_yh{
+	margin-top: 20px;
+	   float: left;
+    width: 240px;
+    height: 35px;
+    background: url(images/yh.gif);
+}
+
+
+/*提示*/
+	.yes{
+		
+		border:2px solid #8FC400;
+	}
+	/*提示*/
+/*	.no{
+		background:#FEF0E3;
+		border:2px solid red;
+	}*/
+	/*input边框变色*/
+	.eorr{   
+		/*outline:none;*/
+		box-shadow: 40px 40px 40px 40px #F1F1F1 inset;
+		border: 1px solid #F1F1F1;
+	}
+
+	.round_list{
+		    position: absolute;
+	    z-index: 20;
+	    bottom: 13px;
+	    right: 311px;
+	}
+
+	.round_list a{
+		display: block;
+	    float: left;
+	    width: 11px;
+	    height: 11px;
+	    margin-right: 11px;
+	    border-radius: 50%;
+	    border:1px solid #878787;
+	}
+	.opt{
+		background: #9BD500;
+	}
+	
+
+</style>
+</head>
+
+<body>
+<div class="zhengti">
+    <div class="header">
+    	<div class="header1">
+    		<a href="首页.html"><img src="未来礼品/logo_new.gif"></a>
+        </div>
+        <div class="header2">
+        <font color="#8FB720">【礼品频道】</font>
+        </div>
+        <div class="header3">
+        销售/客服4006-917-917
+        </div>
+    </div>
+    <div class="banner">
+	    <ul>
+		    <li>首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		    <li>时尚礼品册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		    <li>单品集采&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		    <li>服务&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		    <li>联系我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+	    </ul>
+   
+	</div>
+	<div class="main">
+    	<div class="banner1"><h3>礼品册兑换</h3></div>
+    	<div class="round_list">
+    		<a href="###" class="round opt"></a>
+    		<a href="###" class="round"></a>
+    		<a href="###" class="round"></a>
+    	</div>
+    	<div class="banner_img">
+    		<a href="###"><img src=""></a>
+    	</div>
+    </div>
+    <!-- 表单 -->
+	<div class="main1">
+        <div class="wrap">
+			<form method="get" action="" onsubmit="return checkForm()">
+				<div class="tab_box">
+					<div class="in">
+						<div class="tit tit1">编号</div>
+						<input type="text" name="" id="ipt1" onblur="isNumber()">
+							
+					</div>
+						
+					<div class="in">
+						<div class="tit tit2">密码</div>
+						<input type="password" name="" id="ipt2" onblur="isPassword()">
+					</div>
+
+					<div class="in">
+						<input type="" name="" id="ipt3" placeholder="输入验证码">
+						<input type="button" name="" id="checkCode" onclick="createCode()">
+						<a href="###" onclick="createCode()">换一张</a>
+					</div>
+					
+					<div class="btn">
+						<input type="submit" name="" id="btn_yh" value="">
+					</div>
+				</div>
+			</form>
+		</div>			
+	</div>
+</div>
+       
+   
+    <div class="main2">
+		<a href="###"><img src="未来礼品/gift_home01.jpg"></a>
+		<div class="liulan">
+			<a href="###"><img src="未来礼品/gift_home_btn01.png"></a>
+		</div>
+		 <a href="###"><img src="未来礼品/gift_home02.jpg"></a>
+		<div class="kx">
+			<img src="未来礼品//gift_home03.jpg">
+		</div>
+		<div class="kx1">
+			<img src="未来礼品//gift_home04.jpg">
+		</div>
+		<div class="lj">
+			<a href="###"><img src="未来礼品//gift_home_btn02.png"></a>
+		</div>
+			<a href=""> <img src="未来礼品//gift_home05.jpg"></a>
+		<div class="kx3">
+			<img src="未来礼品//gift_home06.jpg">
+		</div>
+		<div class="kx2">
+			 <a href="###"><img src="未来礼品//gift_home07.jpg"></a>
+		</div>
+		<div class="bp">
+			<a href="###"><img src="未来礼品/gift_home_btn03.png"></a>
+		</div>
+    </div>
+
+   
+    
+	
+
+	<<!-- 尾部 -->
+	<div class="footer_content">
+		<!-- 尾部 -->
+		<div class="footer">
+				<!-- bar -->
+				<div class="bar">
+					<ul>
+						<li>
+							<span class="footer_icon footer_icon01"></span>
+							<div class="footer_txt">
+								<span>18小时低温</span>
+								全程冷链配送
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon02"></span>
+							<div class="footer_txt">
+								<span>0时差基地直供</span>
+								农田到餐桌
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon03"></span>
+							<div class="footer_txt">
+								<span>43项检测</span>
+								安全无农残
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon04"></span>
+							<div class="footer_txt">
+								<span>7*24小时营业</span>
+							    全年无休
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon05"></span>
+							<div class="footer_txt">
+								<span>满60免运费</span>
+								今日下单次日送达
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_list">
+					<ul>
+						<li>
+							<div class="footer_tit ">
+								新手指南
+							</div>
+							<p><a href="#">购物流程</a></p>
+							<p><a href="#">会员政策</a></p>
+							<p><a href="#">联系客服</a></p>
+							<p><a href="#">积分政策</a></p>
+							<p><a href="#">加入我们</a></p>
+						</li>
+						<li>
+							<div class="footer_tit2">
+								配送方式
+							</div>
+							<p><a href="#">全程冷链</a></p>
+							<p><a href="#">配送时间</a></p>
+							<p><a href="#">配送范围</a></p>
+							<p><a href="#">配送收费标准</a></p>
+							<p><a href="#">关于我们</a></p>
+						</li>
+						<li>
+							<div class="footer_tit3">
+								支付方式
+							</div>
+							<p><a href="#">在线支付</a></p>
+							<p><a href="#">其他支付方式</a></p>
+							<p><a href="#">优惠券使用</a></p>
+							<p><a href="#">配送收费标准</a></p>
+							<p><a href="#">礼金卡使用</a></p>
+						</li>
+						<li>
+							<div class="footer_tit4">
+								配送方式
+							</div>
+							<p><a href="#">全程冷链</a></p>
+							<p><a href="#">配送时间</a></p>
+							<p><a href="#">配送范围</a></p>
+							<p><a href="#">配送收费标准</a></p>
+							<p><a href="#">关于我们</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_info">
+					<p class="row1">
+						<img src="images/图标/tell.gif">
+						客服热线：4006-917-917（周一至周日 8:00-20:00）
+					</p>
+					<p class="">
+						<em><a href="#">加入我们</a></em>
+						<em><a href="#">联系我们</a></em>
+						<em><a href="#">关于我们</a></em>
+						<em><a href="#">友情链接</a></em>
+						<em><a href="#">品牌食材</a></em>
+						<em><a href="#">食品经营许可证</a></em>
+						<em><a href="#">营业执照</a></em>
+					</p>
+					<p>
+						<em><a href="#"><img src="images/图标/icon0001.png">京公网安备 11010502022386号</a></em>
+						<em><a href="#">京ICP证120338号</a></em>
+					</p>
+					<p class="copy">
+						© 2012-2018 Benlai.com. All Rights Reserved. 北京本来工坊科技有限公司
+					</p>
+					<p>
+						<a href="#"><img src="images/图标/icon002.jpg"></a>
+					</p>
+				</div>
+		</div>
+	</div>
+		
+</body>
+</html>

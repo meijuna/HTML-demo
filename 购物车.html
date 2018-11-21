@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="css/ShoppingCarr.css">
+	z
+	<link rel="stylesheet" type="text/css" href="css/header_tool.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="script/index.js"></script>
+	<script type="text/javascript" src="script/ShoppingCart.js"></script>
+</head>
+<body>
+		<!-- 工具栏 -->
+		<div class="header_top">
+			<div class="header_box">
+				<div class="header_login">
+					你好，
+					
+					<a href="#">[1914623558]</a>
+				</div>
+				<div class="header_city">
+					<a href="#">发送至:杭州</a>
+				</div>
+				<div class="header_menu">
+					<ul>
+						<li class="menu_word">
+							<a href="#">我的订单</a>
+						</li>
+						<li class="menu_word">
+							<a href="#">未来礼品</a>
+						</li>
+						<li class="menu_word">
+							<div class="inpone">
+								<a href="#">掌上来本</a>	
+								<div class="inpone_meun">
+									<img src="images/app_erweima.png">
+									<p>下载客户端</p>
+								</div>
+							</div>
+							
+						</li>
+						<li class="menu_word service">
+							<a href="#">客服服务</a>
+							<div class="service_meun">
+								<p><a href="#">在线客服</a></p>
+								<p><a href="#">联系客服</a></p>
+								<p><a href="#">帮助中心</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- logo -->
+		<div class="logo_box">
+			<div class="logo_top">
+				<div class="logo">
+					<a href="首页.html"><img src="未来礼品/logo_new.gif"></a>
+				</div>
+				<div class="logistics">
+					<img src="images/logistics.gif">
+				</div>
+			</div>
+		</div>
+	
+		<!-- 购物车 -->
+		<div class="layout_Content">
+			<!-- 我的购物车 -->
+			<div class="cart_tit"><span>我的购物车</span></div>
+			<!-- 购物车内容 -->
+			<div class="cart_content">
+				<div class="cart_box">
+						<!-- 第一列 -->
+						<ul class="cart_tit2">
+							<input type="checkbox" name="" checked="checked">
+							<span style="margin-right:50px">全选</span>
+							<span style="margin-right:290px">商品</span>
+							<span style="margin-right:110px">单价</span>
+							<span style="margin-right:55px">购买数量</span>
+							<span style="margin-right:100px"> 小计</span>
+							<span style="margin-right:35px">库存状态</span>
+						</ul>
+						<!-- 第二列 -->
+						<ul>
+							<li>
+								<div class="cart_bulletin">
+									<dl>
+										<dt><p>换购</p></dt>
+										<dd> 
+											<span >满19.9/49.9/79.9/99.9元可换购</span>
+											<div class="cart_btn">
+												<a href="###">换购</a>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="check1">
+									<input type="checkbox" name="check_xz" checked="checked">
+								</div>
+								<div class="cove">
+									<a href="###"><img src="images/澳洲牛仔骨39.9.jpg"></a>
+								</div>
+								<div class="name">
+									<a href="###">澳洲牛仔骨200g 新老包装随机发货</a>
+								</div>
+								<div class="price">35.90</div>
+								<div class="quantity">
+									<p id="minus1"><a href="###"><img src="images/-.gif"></a></p>
+									<p ><input type="" name="" class="gs" value="1" id="mt1"></p>
+									<p id="add1"><a href="###"><img src="images/+.gif"></a></p>
+								</div>
+								<div class="subtotal" id="Small_plan1">35.90</div>
+								<div class="distribution">有货</div>	
+							</li>
+							<li>
+								<div class="check1">
+									<input type="checkbox" name="check_xz" checked="checked">
+								</div>
+								<div class="cove">
+									<a href="###"><img src="images/菲律宾进口香蕉29.9.jpg"></a>
+								</div>
+								<div class="name">
+									<a href="###">菲律宾进口香蕉</a>
+								</div>
+								<div class="price" >29.9</div>
+								<div class="quantity">
+									<p id="minus2"><a href="###"><img src="images/-.gif"></a></p>
+									<p ><input type="" name="" class="gs" value="1" id="mt2"></p>
+									<p id="add2"><a href="###"><img src="images/+.gif"></a></p>
+								</div>
+								<div class="subtotal" id="Small_plan2">29.9</div>
+								<div class="distribution">有货</div>	
+							</li>
+						</ul>
+				</div>
+				<!-- 操作 -->
+				<div class="hz_cart">
+					<div clas="del_all">
+						<!-- 全选 -->
+						<div class="check">
+							<input type="checkbox" name="check_all" checked="checked">
+						</div>
+						<a href="###" class="select">全选</a>
+						<!-- 删除 -->
+						<a href="###" class="delete"><img src="images/delete.png"></a>
+					</div>
+					<!-- 商品金额 -->
+					
+					<div class="all_price">
+						已选择 <strong id="number">2</strong> 件商品，金额 = <span id="money">35.90</span>元
+					</div>
+					<div class="butn">
+						<input type="button" name="" class="btn">
+						<a href="首页.html">继续购物</a>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="History_box">
+				<div class="list_tab3">
+						<ul>
+							<li class="in"><a href="###">最近浏览商品</a></li>
+							<li ><a href="###">收藏夹</a></li>
+							<li><a href="###">已删除商品</a></li>
+						</ul>
+					</div>
+
+					<div class="clear"></div>
+					<div class="produc_list">
+						<!-- 最近浏览商品 -->
+						<div class="produc2">
+							<div class="list_produc2  ">
+								<ul>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/小台芒果.jpg"></a>
+											</p>
+											<p class="name">
+												<span>小台农芒果1kg/盒</span>
+											</p>
+											<p class="price">
+												￥19.90
+												<del>￥48.00</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/80c657b7-f495-4cf7-9edf-b2e784b15787.jpg"></a>
+											</p>
+											<p class="name">
+												<span>进口牛油果4粒</span>
+											</p>
+											<p class="price">
+												￥59.00
+												<del>￥69.00</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/d25838d3-6f02-4f93-8cc0-fbdd53379992.jpg"></a>
+											</p>
+											<p class="name">
+												<span>台湾爱文芒果2粒装</span>
+											</p>
+											<p class="price">
+												￥39.90
+												<!-- <del>￥78.00</del> -->
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/81e45552-5b01-4c0f-9462-aa4b14f2c480.jpg"></a>
+											</p>
+											<p class="name">
+												<span>越南进口红心火龙果</span>
+											</p>
+											<p class="price">
+												￥29.90
+												<del>￥42.80</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box ">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/进口牛油果53.9.jpg"></a>
+											</p>
+											<p class="name">
+												<span>进口牛油果6粒（约</span>
+											</p>
+											<p class="price">
+												￥22.9
+												<del>￥34.90</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									
+								
+								</ul>
+							</div>
+							
+						</div>
+						<!-- 收藏夹 -->
+						<div class="produc2 none">
+							<div class="list_produc2 ">
+								<h2 >暂无收藏商品</h2>
+							</div>
+							
+						</div>
+
+						<!-- 收藏夹 -->
+						<div class="produc2 none">
+							<div class="list_produc2 ">
+								<ul>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/小台芒果.jpg"></a>
+											</p>
+											<p class="name">
+												<span>小台农芒果1kg/盒</span>
+											</p>
+											<p class="price">
+												￥19.90
+												<del>￥48.00</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/80c657b7-f495-4cf7-9edf-b2e784b15787.jpg"></a>
+											</p>
+											<p class="name">
+												<span>进口牛油果4粒</span>
+											</p>
+											<p class="price">
+												￥59.00
+												<del>￥69.00</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/d25838d3-6f02-4f93-8cc0-fbdd53379992.jpg"></a>
+											</p>
+											<p class="name">
+												<span>台湾爱文芒果2粒装</span>
+											</p>
+											<p class="price">
+												￥39.90
+												<!-- <del>￥78.00</del> -->
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/81e45552-5b01-4c0f-9462-aa4b14f2c480.jpg"></a>
+											</p>
+											<p class="name">
+												<span>越南进口红心火龙果</span>
+											</p>
+											<p class="price">
+												￥29.90
+												<del>￥42.80</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="list_produc_box ">
+											<p class="cover">
+												<a href="#"><img src="images/时令鲜果/进口牛油果53.9.jpg"></a>
+											</p>
+											<p class="name">
+												<span>进口牛油果6粒（约</span>
+											</p>
+											<p class="price">
+												￥22.9
+												<del>￥34.90</del>
+											</p>
+											<p class="btn">
+												<a href=""></a>	
+											</p>
+										</div>
+									</li>
+									
+								
+								</ul>
+							</div>
+							
+						</div>
+
+
+						
+						
+					</div>
+			</div>
+		</div>
+		
+
+		<!-- 尾部 -->
+		<div class="footer">
+				<!-- bar -->
+				<div class="bar">
+					<ul>
+						<li>
+							<span class="footer_icon footer_icon01"></span>
+							<div class="footer_txt">
+								<span>18小时低温</span>
+								全程冷链配送
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon02"></span>
+							<div class="footer_txt">
+								<span>0时差基地直供</span>
+								农田到餐桌
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon03"></span>
+							<div class="footer_txt">
+								<span>43项检测</span>
+								安全无农残
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon04"></span>
+							<div class="footer_txt">
+								<span>7*24小时营业</span>
+							    全年无休
+							</div>
+						</li>
+						<li>
+							<span class="footer_icon footer_icon05"></span>
+							<div class="footer_txt">
+								<span>满60免运费</span>
+								今日下单次日送达
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_list">
+					<ul>
+						<li>
+							<div class="footer_tit ">
+								新手指南
+							</div>
+							<p><a href="#">购物流程</a></p>
+							<p><a href="#">会员政策</a></p>
+							<p><a href="#">联系客服</a></p>
+							<p><a href="#">积分政策</a></p>
+							<p><a href="#">加入我们</a></p>
+						</li>
+						<li>
+							<div class="footer_tit2">
+								配送方式
+							</div>
+							<p><a href="#">全程冷链</a></p>
+							<p><a href="#">配送时间</a></p>
+							<p><a href="#">配送范围</a></p>
+							<p><a href="#">配送收费标准</a></p>
+							<p><a href="#">关于我们</a></p>
+						</li>
+						<li>
+							<div class="footer_tit3">
+								支付方式
+							</div>
+							<p><a href="#">在线支付</a></p>
+							<p><a href="#">其他支付方式</a></p>
+							<p><a href="#">优惠券使用</a></p>
+							<p><a href="#">配送收费标准</a></p>
+							<p><a href="#">礼金卡使用</a></p>
+						</li>
+						<li>
+							<div class="footer_tit4">
+								配送方式
+							</div>
+							<p><a href="#">全程冷链</a></p>
+							<p><a href="#">配送时间</a></p>
+							<p><a href="#">配送范围</a></p>
+							<p><a href="#">配送收费标准</a></p>
+							<p><a href="#">关于我们</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_info">
+					<p class="row1">
+						<img src="images/图标/tell.gif">
+						客服热线：4006-917-917（周一至周日 8:00-20:00）
+					</p>
+					<p class="">
+						<em><a href="#">加入我们</a></em>
+						<em><a href="#">联系我们</a></em>
+						<em><a href="#">关于我们</a></em>
+						<em><a href="#">友情链接</a></em>
+						<em><a href="#">品牌食材</a></em>
+						<em><a href="#">食品经营许可证</a></em>
+						<em><a href="#">营业执照</a></em>
+					</p>
+					<p>
+						<em><a href="#"><img src="images/图标/icon0001.png">京公网安备 11010502022386号</a></em>
+						<em><a href="#">京ICP证120338号</a></em>
+					</p>
+					<p class="copy">
+						© 2012-2018 Benlai.com. All Rights Reserved. 北京本来工坊科技有限公司
+					</p>
+					<p>
+						<a href="#"><img src="images/图标/icon002.jpg"></a>
+					</p>
+				</div>
+		</div>
+
+
+</body>
+</html>
